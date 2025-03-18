@@ -1,0 +1,162 @@
+
+STRING HANDLING AND MANIPULATIONS:
+		
+EXAMPLE: LOWERCASE AND UPPERCASE:
+	class Main {
+    public static void main(String[] args) {
+        String txt = "Hello World";
+         System.out.println(txt.toUpperCase());
+         System.out.println(txt.toLowerCase());
+
+    }
+}
+
+OUTPUT:
+	HELLO WORLD
+	hello world
+=== Code Execution Successful ===
+
+
+EXAMPLE: TO COMPARE TWO STRINGS THAR ARE STORED IN DIFFERENT MEMORY.
+
+	public static void main(string[]args){
+		string str="hello";
+ 		string str1=new string("hello");
+		system.out.println(str1==str2);
+		system.out.println(str1.equals(str2));
+}
+}
+
+OUTPUT:
+ true
+==code execution successfull==
+
+
+EXAMPLE:
+	class Main {
+    public static void main(String[] args) {
+        String str1="java";
+        String str2="java";
+        System.out.println("Case-sensitive equals:"+str1.equals(str2));
+        System.out.println("Case-insensitive equals:"+str1.equalsIgnoreCase(str2));
+    
+    }
+}
+
+OUTPUT:
+	Case-sensitive equals:true
+	Case-insensitive equals:true
+	=== Code Execution Successful ===
+
+
+EXAMPLE:
+	String myStr = "Hello, World!";
+	System.out.println(myStr.substring(7, 12));
+
+REPLACING CHARACTERS IN STRING:
+
+class Main {
+    public static void main(String[] args) {
+        String str1="java programming";
+        System.out.println(str1.replace('a','x'));
+    }
+}
+
+OUTPUT:
+ jxvx progrxmming
+
+
+EXAMPLE:
+class Main {
+    public static void main(String[] args) {
+        String myStr = "Hello, World!";
+        System.out.println(myStr.substring(7, 12));
+
+    }
+}
+
+OUTPUT:
+
+	World
+=== Code Execution Successful ===
+
+
+EXAMPLE:
+	class Main {
+   		 public static void main(String[] args) {
+       		 String myStr = "Hello planet earth, you are a great planet.";
+      		   System.out.println(myStr.indexOf("planet"));
+  		  }
+		}
+OUTPUT:
+	6
+=== Code Execution Successful ===
+
+EXAMPLE:
+
+class Main {
+    public static void main(String[] args) {
+       String myStr = "       Hello World!       ";
+         System.out.println(myStr);
+         System.out.println(myStr.trim());
+
+    }
+}
+
+OUTPUT:
+	 	Hello World!       
+	  Hello World!
+
+=== Code Execution Successful ===
+
+REVERSE A STRING:
+
+EXAMPLE: reverse a string by characters.
+class Main {
+    public static void main(String[] args) {
+       String originalStr = "Hello";
+        String reversedStr = "";
+
+        for (int i = 0; i < originalStr.length(); i++) {
+         reversedStr = originalStr.charAt(i) + reversedStr;
+        }
+
+        System.out.println("Reversed string: "+ reversedStr);
+
+    }
+}
+
+OUTPUT:
+
+Reversed string: olleH
+
+
+EXAMPLE:
+	public class Main {
+ 	 public static void main(String[] args) {
+   	 Integer myInt = 5;
+    		Double myDouble = 5.99;
+    		Character myChar = 'A';
+    		System.out.println(myInt);
+    		System.out.println(myDouble);
+    		System.out.println(myChar);
+ 	 }
+	}
+
+OUTPUT:
+5
+5.99
+A
+
+
+
+EXAMPLE:
+public class Main {
+  public static void main(String[] args) {
+    Integer myInt = 100;
+    String myString = myInt.toString();
+    System.out.println(myString.length());
+  }
+}
+OUTPUT:
+	3
